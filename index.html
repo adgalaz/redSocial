@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Adopción de Mascotas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Menu -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper blue darken-1">
+        <a href="#!" class="brand-logo"><img class="logo circle" src="assets/img/logo.gif" alt="Logo"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="link" href="#">Regístrate</a></li>
+          <li><a class="link" href="#">Perfil</a></li>
+          <li><a class="link" href="#">Configuración</a></li>
+          <li><a class="link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Slider -->
+  <section>
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="assets/img/mascotas.jpg">
+              <!-- random image -->
+              <div class="caption center-align">
+                <h1>Adopta una Mascota!!</h1>
+                <h5 class="light grey-text text-lighten-3">Nosotros te ayudamos.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="assets/img/perro.jpg">
+              <!-- random image -->
+              <div class="caption left-align">
+                <h3>Adopción Ética de Mascotas</h3>
+                <h5 class="light grey-text text-lighten-3">No compres... Adopta!.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="assets/img/gato.jpg">
+              <!-- random image -->
+              <div class="caption right-align">
+                <h3>Tenencia Responsable</h3>
+                <h5 class="light grey-text text-lighten-3">6 pasos básicos</h5>
+              </div>
+            </li>
+            <li>
+              <img src="assets/img/periquito.jpg">
+              <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mensajes, noticias, formulario -->
+  <section class="adopcion">
+    <div class="row">
+      <div class="col s12 m3 offset-m1 l3 offset-l1">
+        <div class="formulario">
+          <h5>Publica tu aviso</h5>
+          <div class="input-field">
+            <input id="input_text" type="text" data-length="10">
+            <label for="input_text">Nombre Usuario</label>
+          </div>
+          <div class="input-field">
+            <input id="input_text" type="text" data-length="20">
+            <label for="input_text">Email</label>
+          </div>
+          <h6>¿Qué quieres hacer hoy?</h6>
+          <form action="#">
+            <p>
+              <input type="checkbox" id="test5" />
+              <label for="test5">Adoptar</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test6" />
+              <label for="test6">Dar en Adopción</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test7" />
+              <label for="test7">Donar</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test8" />
+              <label for="test8">Dar información</label>
+            </p>
+          </form>
+          <div class="input-field">
+            <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+            <label for="textarea1">Escribe tu mensaje</label>
+          </div>
+          <form action="#">
+            <div class="file-field input-field">
+              <div>
+                <i class="material-icons prefix">attach_file</i>
+                <input type="file">
+                <label for="icon_prefix">Sube tu foto</label>
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+          </form>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+    <i class="material-icons right">send</i>
+  </button>
+        </div>
+      </div>
+
+      <!-- Mascotas en adopción -->
+      <div class="col s12 m7 l7">
+        <div class="mascotas">
+          <h4>Mascotas en Adopción</h4>
+        </div>
+        <div class="row">
+          <div class="col s12 m4 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/img/cat1.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/img/perro1.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/img/hamster1.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m4 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/img/conejo1.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/img/perico1.jpeg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4 l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/img/tortuga.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="commentNews">
+    <div class="row">
+      <div class="col s12 m3 offset-m1 l3 offset-l1">
+        <div class="comentarios">
+          <h5>Deja tu comentario</h5>
+          <div class="input-field">
+            <textarea id="comment" id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+            <label for="textarea1">Escribe tu mensaje</label>
+          </div>
+          <a id="btn" class="waves-effect waves-light btn"><i class="material-icons prefix">send</i></a>
+          <div class="box">
+            <div id="cont">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m7 l7">
+        <div class="mascotas">
+          <h4>Noticias</h4>
+        </div>
+        <div class="row">
+          <div class="col s12 m5 l5">
+            <div class="card">
+              <div class="card-image">
+                <img src="assets/img/noticia1.jpg">
+                <span class="card-title">Exhibición canina</span>
+              </div>
+              <div class="card-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="card-action">
+                <a href="#">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m7 l7">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="assets/img/noticias2.png">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">Leer más</a>
+                </div>
+              </div>
+            </div>
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="assets/img/hotelperros.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">Leer más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="page-footer blue darken-1">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sidenav
+  <ul id="slide-out" class="side-nav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/office.jpg">
+        </div>
+        <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#!name"><span class="white-text name">John Doe</span></a>
+        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+-->
+
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

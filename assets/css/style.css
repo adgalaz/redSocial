@@ -1,0 +1,82 @@
+/*Menu*/
+.logo {
+  width: 1.8em;
+  height: auto;
+  margin-left: 1em;
+  margin-top: 0.1em;
+}
+
+/*Formulario*/
+.formulario {
+  background-image: url(../img/fondo2.jpg);
+  padding: 2em;
+  margin-top: 2em;
+  color: #fff;
+}
+
+.input-field label {
+  color: #fff;
+}
+
+.input-field input[type=text]:focus+label {
+  color: #fff;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+
+
+.input-field input[type=text] {
+  border-bottom: 2px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after{
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+
+.input-field .prefix.active {
+  color: #fff;
+}
+
+textarea{
+  color: #fff;
+}
+
+label{
+  color: #fff;
+}
+
+textarea.materialize-textarea{
+  border-bottom: 2px solid #fff;
+}
+
+/*Mascotas en adopcion*/
+.adopcion{
+  background-image: url(../img/fondo1.gif);
+  margin-top: -60px;
+}
+
+.mascotas{
+  padding: 0 2em;
+}
+
+/*Mascotas en adopcion*/
+.comentarios{
+  background-image: url(../img/fondo2.jpg);
+  padding: 2em;
+  margin-top: 2em;
+  color: #fff;
+}
+
+.corazon{
+  color: red;
+}
