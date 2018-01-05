@@ -12,15 +12,123 @@
 </head>
 
 <body>
+  <!-- Sign in -->
+  <div id="modal1" class="modal">
+    <div class="section"></div>
+    <main>
+      <center>
+        <img class="responsive-img circle" style="width: 100px;" src="assets/img/login.gif" />
+        <div class="section"></div>
+
+        <h5 class="indigo-text">Registrarse</h5>
+        <div class="section"></div>
+
+        <div class="container">
+          <div class="z-depth-1 indigo lighten-3 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #fff;">
+
+            <form class="col s12" method="post">
+              <div class='row'>
+                <div class='col s12'>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='input-field col s12'>
+                  <input class='validate' type='email' name='email' id='email' />
+                  <label for='email'>Nombre Completo</label>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='input-field col s12'>
+                  <input class='validate' type='email' name='email' id='email' />
+                  <label for='email'>Email</label>
+                </div>
+              </div>
+
+              <div class='row'>
+                <div class='input-field col s12'>
+                  <input class='validate' type='password' name='password' id='password' />
+                  <label for='password'>Password</label>
+                </div>
+                <label style='float: right;'>
+                    <a class='pink-text' href='#!'><b>Enviar email</b></a>
+                  </label>
+              </div>
+              <br />
+              <center>
+                <div class='row'>
+                  <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Sign in</button>
+                </div>
+              </center>
+            </form>
+          </div>
+        </div>
+      </center>
+      <div class="section"></div>
+      <div class="section"></div>
+    </main>
+  </div>
+
+
+  <!-- Login -->
+  <div id="modal2" class="modal">
+    <div class="section"></div>
+    <main>
+      <center>
+        <img class="responsive-img circle" style="width: 100px;" src="assets/img/login.gif" />
+        <div class="section"></div>
+
+        <h5 class="indigo-text">Por favor, ingresa tu cuenta</h5>
+        <div class="section"></div>
+
+        <div class="container">
+          <div class="z-depth-1 indigo lighten-3 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #fff;">
+
+            <form class="col s12" method="post">
+              <div class='row'>
+                <div class='col s12'>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='input-field col s12'>
+                  <input class='validate' type='email' name='email' id='email' />
+                  <label for='email'>Email</label>
+                </div>
+              </div>
+
+              <div class='row'>
+                <div class='input-field col s12'>
+                  <input class='validate' type='password' name='password' id='password' />
+                  <label for='password'>Password</label>
+                </div>
+                <label style='float: right;'>
+    								<a class='pink-text' href='#!'><b>Olvidaste tu Password?</b></a>
+    							</label>
+              </div>
+              <br />
+              <center>
+                <div class='row'>
+                  <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+                </div>
+              </center>
+            </form>
+          </div>
+        </div>
+        <a href="#!">Crear cuenta</a>
+      </center>
+      <div class="section"></div>
+      <div class="section"></div>
+    </main>
+  </div>
+
   <!-- Menu -->
   <div class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper blue darken-1">
+      <div class="nav-wrapper cyan lighten-1">
         <a href="#!" class="brand-logo"><img class="logo circle" src="assets/img/logo.gif" alt="Logo"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a class="link" href="#">Regístrate</a></li>
-          <li><a class="link" href="#">Perfil</a></li>
-          <li><a class="link" href="#">Configuración</a></li>
+          <li><a class="link modal-trigger" href="#modal1">Regístrate</a></li>
+          <li><a class="link modal-trigger" href="#modal2">Login</a></li>
+          <li><a class="link" href="miperfil.html">Perfil</a></li>
           <li><a class="link" href="#">Contacto</a></li>
         </ul>
       </div>
@@ -45,8 +153,8 @@
               <img src="assets/img/perro.jpg">
               <!-- random image -->
               <div class="caption left-align">
-                <h3>Adopción Ética de Mascotas</h3>
-                <h5 class="light grey-text text-lighten-3">No compres... Adopta!.</h5>
+                <h3>Adopción ética de Mascotas</h3>
+                <h5 class="light grey-text text-lighten-3">No compres... Adopta!</h5>
               </div>
             </li>
             <li>
@@ -54,15 +162,15 @@
               <!-- random image -->
               <div class="caption right-align">
                 <h3>Tenencia Responsable</h3>
-                <h5 class="light grey-text text-lighten-3">6 pasos básicos</h5>
+                <h5 class="light grey-text text-lighten-3">Pasos básicos</h5>
               </div>
             </li>
             <li>
               <img src="assets/img/periquito.jpg">
               <!-- random image -->
               <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                <h3>Promovemos el cuidado de tu mascota</h3>
+                <h5 class="light grey-text text-lighten-3">Noticias y enlaces</h5>
               </div>
             </li>
           </ul>
@@ -138,12 +246,12 @@
                 <img class="activator" src="assets/img/cat1.jpg">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
+                <span class="card-title activator grey-text text-darken-4">Simon<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Adoptame!</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                <span class="card-title grey-text text-darken-4">Consejos<i class="material-icons right">close</i></span>
+                <p>Llevarlo a vacunar.<br> A tu mascota le deben aplicar la triple felina y la vacuna contra la rabia Y cada tres meses debes llevar a tu gato para desparasitarlo.</p>
               </div>
             </div>
           </div>
@@ -153,12 +261,12 @@
                 <img class="activator" src="assets/img/perro1.jpg">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
+                <span class="card-title activator grey-text text-darken-4">Bob<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Adoptame!</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                <span class="card-title grey-text text-darken-4">Consejos<i class="material-icons right">close</i></span>
+                <p>Dale a tu perro un área designada.<br> Antes de llevar un perro a tu casa, debes decidir es en qué área se encontrará el perro ,cuáles serán las áreas de la casa a las que podrá acceder y no podrá acceder. Estas reglas deben aplicarse desde el inicio para evitar confusiones.</p>
               </div>
             </div>
           </div>
@@ -168,12 +276,12 @@
                 <img class="activator" src="assets/img/hamster1.jpg">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
+                <span class="card-title activator grey-text text-darken-4">Lisa<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Adoptame!</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                <span class="card-title grey-text text-darken-4">Consejos<i class="material-icons right">close</i></span>
+                <p>La esperanza de vida del hámster oscila entre dos y tres años. La visita al veterinario es importante para prevenir la salud del animal. Entre las patologías más frecuentes se encuentran parásitos, enfermedades respiratorias, meningitis, diabetes y fracturas por caídas inesperadas.</p>
               </div>
             </div>
           </div>
@@ -185,12 +293,12 @@
                 <img class="activator" src="assets/img/conejo1.jpg">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
+                <span class="card-title activator grey-text text-darken-4">Peter<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Adoptame!</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                <span class="card-title grey-text text-darken-4">Consejos<i class="material-icons right">close</i></span>
+                <p>Los conejos son animales de cuerpo rechoncho recubierto de un pelaje denso y lanudo de color gris pálido, la cabeza es ovalada, con orejas largas, de hasta siete centímetros cada una, y los ojos grandes la cola es pequeña y de color blanco. Las patas anteriores son sensiblemente más cortas que las posteriores.</p>
               </div>
             </div>
           </div>
@@ -200,27 +308,27 @@
                 <img class="activator" src="assets/img/perico1.jpeg">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
+                <span class="card-title activator grey-text text-darken-4">Arnoldo<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Adoptame!</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                <span class="card-title grey-text text-darken-4">Consejos<i class="material-icons right">close</i></span>
+                <p>Si bien los pericos son aves cuyo cuidado es relativamente fácil, necesitan un entorno limpio, una dieta apropiada, interacción social y estimulación mental.Los pericos son aves sociables y disfrutan vivir en parejas o en grupos</p>
               </div>
             </div>
           </div>
           <div class="col s12 m4 l4">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="assets/img/tortuga.jpg">
+                <img class="activator" src="assets/img/tortuga.jpeg">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
+                <span class="card-title activator grey-text text-darken-4">Norman<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Adoptame!</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                <span class="card-title grey-text text-darken-4">Consejos<i class="material-icons right">close</i></span>
+                <p>Elige una pecera lo suficientemente amplia para permitir que la o las (mucho mejor si tienes dos) tortugas estén cómodas, siempre tomando en cuenta que crecerán. Además ten en cuenta que debe haber un área de tierra para que la tortuga salga a descansar o tomar el sol.</p>
               </div>
             </div>
           </div>
@@ -238,7 +346,9 @@
             <textarea id="comment" id="textarea1" class="materialize-textarea" data-length="120"></textarea>
             <label for="textarea1">Escribe tu mensaje</label>
           </div>
-          <a id="btn" class="waves-effect waves-light btn"><i class="material-icons prefix">send</i></a>
+          <button id="btn" class="btn waves-effect waves-light" type="submit" name="action">Enviar
+    <i class="material-icons right">send</i>
+  </button>
           <div class="box">
             <div id="cont">
             </div>
@@ -246,7 +356,7 @@
         </div>
       </div>
       <div class="col s12 m7 l7">
-        <div class="mascotas">
+        <div class="noticias">
           <h4>Noticias</h4>
         </div>
         <div class="row">
@@ -254,10 +364,12 @@
             <div class="card">
               <div class="card-image">
                 <img src="assets/img/noticia1.jpg">
-                <span class="card-title">Exhibición canina</span>
+                <span id="titulo"class="card-title">Escuela Canina</span>
               </div>
               <div class="card-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p>Invierte en su entrenamiento <br>
+               Las clases para las mascotas benefician al dueño antes que a nadie, pues le otorgan el control tanto para situaciones básicas, como soltar algo que tenga en la boca que no deba masticar.
+               </p>
               </div>
               <div class="card-action">
                 <a href="#">Leer más</a>
@@ -271,7 +383,9 @@
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                  <p>Mantener un peso saludable <br>
+                 controla sus porciones y asegúrate que están caminando o corriendo lo suficiente para quemar las calorías.
+                 </p>
                 </div>
                 <div class="card-action">
                   <a href="#">Leer más</a>
@@ -284,7 +398,9 @@
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                  <p>Ambiente hogareño y calidez.<br>
+                 Consejos para escoger el mjor lugar donde dejar a tu mascota.
+                 </p>
                 </div>
                 <div class="card-action">
                   <a href="#">Leer más</a>
@@ -297,39 +413,31 @@
     </div>
   </section>
 
-
-
-  <footer class="page-footer blue darken-1">
+  <!-- Footer -->
+  <footer class="page-footer cyan lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sobre Nuestra Red</h5>
+          <p class="grey-text text-lighten-4">Somos un grupo de personas apasionadas por los animales que queremos aportar en la busqueda de familias que puedan cuidar y amar a estos hermosos seres. Nuestra principal misión es acercar a personas que necesitan dar en adopcion a una mascota y a quienes desean buscar una. Los invitamos a unirse a nuestra red.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Adopta</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Nosotros</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Contacto</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Información</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Servicios</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="footer-copyright">
       <div class="container">
-        © 2014 Copyright Text
+        © 2018 Copyright
       </div>
     </div>
   </footer>
-
-  <!-- Sidenav
-  <ul id="slide-out" class="side-nav">
-    <li>
-      <div class="user-view">
-        <div class="background">
-          <img src="images/office.jpg">
-        </div>
-        <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-        <a href="#!name"><span class="white-text name">John Doe</span></a>
-        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-      </div>
-    </li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li>
-      <div class="divider"></div>
-    </li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-  </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
--->
-
 
   <!-- Scripts -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>

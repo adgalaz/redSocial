@@ -1,0 +1,30 @@
+/*Menu*/
+.logo {
+  width: 1.8em;
+  height: auto;
+  margin-left: 1em;
+  margin-top: 0.1em;
+}
+
+.btn-floating.btn-large{
+  margin-top: -100px;
+  margin-left: 2em;
+}
+
+.cyan.lighten-5{
+  margin-top: -20px;
+}
+
+.carousel .carousel-item>img{
+  width: 200%;
+}
+
+.foto{
+  width: 5em;
+  height: 5em;
+  margin-right: 1em;
+}
+
+h6{
+  font-weight: bold;
+}

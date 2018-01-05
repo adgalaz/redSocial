@@ -1,3 +1,19 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.grey.lighten-4 {
+    background-image: url(../img/fondo1.jpg) !important;
+}
+
+
 /*Menu*/
 .logo {
   width: 1.8em;
@@ -47,6 +63,17 @@
   color: #fff;
 }
 
+/* label focus color */
+    .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+     color: #fff !important;
+    }
+
+/* label underline focus color */
+    .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+     border-bottom: 1px solid #fff !important;
+     box-shadow: 0 1px 0 0 #fff !important;
+    }
+
 textarea{
   color: #fff;
 }
@@ -63,20 +90,39 @@ textarea.materialize-textarea{
 .adopcion{
   background-image: url(../img/fondo1.gif);
   margin-top: -60px;
+  padding: 3em 2em;
 }
 
 .mascotas{
   padding: 0 2em;
 }
 
-/*Mascotas en adopcion*/
+/*Noticias*/
 .comentarios{
   background-image: url(../img/fondo2.jpg);
   padding: 2em;
-  margin-top: 2em;
+  margin-top: 4em;
   color: #fff;
 }
 
 .corazon{
   color: red;
+}
+
+.commentNews{
+  background-image: url(../img/fondo3.JPG);
+  background-size: cover;
+}
+
+footer{
+  margin-top: -20px;
+}
+
+.noticias{
+  padding: 2em 2em 0 2em ;
+}
+
+#titulo{
+  color: #212121;
+  font-weight: bold;
 }
